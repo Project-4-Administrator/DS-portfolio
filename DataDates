@@ -1,0 +1,5 @@
+import sqlite3
+
+connection = sqlite3.connect("data.db")
+with connection:
+    connection.execute(" CREATE TABLE girls (id INTEGER PRIMARY KEY, name TEXT, methond TEXT, rating INTEGER);")
